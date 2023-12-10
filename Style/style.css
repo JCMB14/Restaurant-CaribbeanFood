@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Index*/
+/*header*/
+
+.header {
+  height: 120px;
+  background-color: #54bd58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.8fr;
+  gap: 5%;
+}
+.header nav {
+  grid-column: 3;
+}
+
+.header a {
+  font: none;
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.enlaces::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s;
+  background-color: #003902;
+  position: absolute;
+  transform-origin: left;
+}
+
+.header .enlaces:hover {
+  color: rgb(2, 84, 2);
+}
+
+.enlaces:hover::after {
+  width: 100%;
+}
+.name {
+  grid-column: 1;
+}
+.name1 {
+  grid-column: 2;
+}
+.name1 h2 {
+  color: white;
+  font-size: 22px;
+}
+.name img {
+  width: 220px;
+  height: 120px;
+}
+
+/*MAIN*/
+.content_main {
+  background-image: url(https://github.com/JCMB14/Front-end-Proyects/blob/main/Restaurant%20CaribbeanFood/img/fondoalmuerzo.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.breve_descrip {
+  position: relative;
+  left: 160px;
+  top: 150px;
+  width: 600px;
+}
+.breve_descrip p {
+  color: white;
+  font-size: 20px;
+}
+.breve_descrip h3 {
+  color: white;
+  font-size: 30px;
+  width: 550px;
+}
+.go_formulario {
+  position: relative;
+  left: 160px;
+  top: 200px;
+  width: 150px;
+  height: 40px;
+}
+.go_formulario a {
+  text-decoration: none;
+  color: #54bd58;
+  font-size: 20px;
+  background: white;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15%;
+}
+.go_formulario a:hover {
+  color: white;
+  background: #54bd58;
+}
+.content_platillos {
+  background: black;
+}
+.content_platillos h2 {
+  text-align: center;
+  color: white;
+  padding: 20px 0 20px 0;
+}
+.plato1,
+.plato2,
+.plato3,
+.platoprecio {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+.content_platillos img {
+  width: 900px;
+  height: 600px;
+  border-radius: 10%;
+}
+
+.content_servicios {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.content_servi svg {
+  font-size: 150px;
+  margin-bottom: 10px;
+}
+.img_fecha {
+  position: relative;
+  left: 110px;
+}
+.img_auto {
+  position: relative;
+  left: 80px;
+}
+.img_domi {
+  position: relative;
+  left: 80px;
+}
+.content_servi {
+  width: 33%;
+  margin-left: 50px;
+}
+.domi_descrip,
+.auto_servi,
+.fecha_servi {
+  text-align: center;
+  width: 350px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #54bd58;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  position: relative;
+  left: 200px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+footer .w {
+  position: relative;
+  bottom: 35px;
+  top: -20px;
+}
+footer .f {
+  position: relative;
+  left: 92px;
+  top: 20px;
+}
+
+footer .fa-square-whatsapp {
+  position: relative;
+  left: 210px;
+  top: -23px;
+  font-size: 20px;
+}
+footer .fa-facebook {
+  position: relative;
+  left: 104px;
+  top: 15px;
+  font-size: 20px;
+}
+footer .fa-location-dot {
+  position: relative;
+  left: 290px;
+  top: 80px;
+  font-size: 35px;
+}
+.direc {
+  height: 120px;
+  position: relative;
+  right: -60px;
+}
+
+.direc h4 {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  left: 200px;
+  margin-top: -5px;
+}
+.direc p {
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  margin-top: 25px;
+}
+/*FORMULARIO*/
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f2f2;
+  min-height: 500px;
+}
+.datos_personales {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #0000001a;
+  max-width: 400px;
+  width: 100%;
+}
+.btn_nombre,
+.btn_telefono,
+.btn_direccion {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.datos_personales label {
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+}
+.datos_personales h2 {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.pedidos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.pedidos_boton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #54bd58;
+  border: none;
+  height: 45px;
+  width: 150px;
+  border-radius: 10%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pedidos_boton:hover{
+  color: #10d017;
+  background: #198600;
+}
+/*MENU*/
+.next_pago{
+  position: relative;
+  right: -135px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+
+}
+section {
+  background-color: rgb(248, 244, 244);
+}
+.content_menu_corrientes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.menu_opc img {
+  width: 300px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.menu_opc p {
+  width: 290px;
+}
+.menu_info p,
+h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+.precio {
+  color: #54bd58;
+  font-size: 30px;
+}
+.cantidad,
+.btn_co {
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  position: relative;
+  left: 80px;
+}
+
+.btn_co {
+  width: 50px;
+}
+.añadir {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn_añadir {
+  background: #54bd58;
+  width: 120px;
+  height: 40px;
+  border: none;
+  box-shadow: 2px 2px 4px #0f4d01;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.btn_añadir:hover{
+  background: rgb(0, 220, 103);
+  color: rgb(0, 0, 0);
+}
+
+.menu_opc {
+  background: white;
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.menu_opc figure {
+  overflow: hidden;
+}
+.menu_opc:hover img {
+  transform: scale(1.2);
+}
+.content_menu_sopas {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content_menu_demas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.btn_tipoA,
+.btn_tipoL,
+.agua,
+.leche {
+  position: relative;
+  left: 90px;
+}
+.selec_jugo,
+.selec_gas,
+.selec_helado {
+  position: relative;
+  left: 105px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.recibo_comida{
+  width: 150px;
+  height: 40px;
+  background: #10d017;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.recibo_comida:hover{
+  background: rgb(0, 164, 0);
+  color: rgb(179, 238, 179);
+}
+.content_recibo{
+  width: 1349px;
+  background: rgb(248, 244, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_datos{
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content_datos p{
+  text-align: center;
+  margin: 10px;
+}
+#content_detalles{
+  margin: 20px;
+}

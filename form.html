@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/bcc3f4ccfc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="name">
+        <img
+          src="img/logo.png"
+          alt="imagen"
+        /> 
+      </div>
+      <div class="name1">
+        <h2>El almuerzo es vida, come y vive al máximo</h2>
+      </div>
+      <nav>
+        <a class="enlaces" href="index.html">Inicio</a>
+        <a class="enlaces" href="form.html">Formulario</a>
+        <a class="enlaces" href="menu.html">Menú</a>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div class="datos_personales">
+          <h2>Datos basicos</h2>
+          <label name="nombre">
+            Nombre:
+            <input
+              type="text"
+              name="nombre"
+              id="inputName"
+              class="btn_nombre"
+              required
+            />
+          </label>
+          <br />
+          <label name="direccion">
+            Dirección:
+            <input
+              type="text"
+              name="direccion"
+              id="inputDirec"
+              class="btn_direccion"
+              required
+            />
+          </label>
+          <br />
+          <label name="telefono">
+            Telefono:
+            <input
+              type="number"
+              name="telefono"
+              id="inputNumber"
+              class="btn_telefono"
+              required
+            />
+          </label>
+          <div class="pedidos">
+            <a href="#" class="pedidos_boton" id="boton_next">Siguiente</a>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="save-data.js"></script>
+
+    <footer>
+      <p class="w">WhatsApp</p>
+      <i class="fa-brands fa-square-whatsapp" style="color: #000000"></i>
+      <p class="f">Facebook</p>
+      <i class="fa-brands fa-facebook" style="color: #000000"></i>
+
+      <div class="mas_info">
+        <div class="direc">
+          <i class="fa-solid fa-location-dot" style="color: #000000"></i>
+          <h4>¿Donde nos ubicamos?</h4>
+          <p>Cra 80 #45-30</p>
+        </div>
+
+        <div></div>
+      </div>
+    </footer>
+  </body>
+</html>
