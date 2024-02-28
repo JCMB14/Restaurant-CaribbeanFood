@@ -11,11 +11,11 @@ tipoJugo.addEventListener("change", function () {
       break;
     case "fresa":
       imagenJugo.src =
-        "https://www.tododisca.com/wp-content/uploads/2022/02/Jugo-fresa-gripe.jpg";
+        "https://t1.uc.ltmcdn.com/es/posts/8/2/8/como_hacer_jugo_de_fresa_28828_orig.jpg";
       break;
     case "mora":
       imagenJugo.src =
-        "https://www.recetasparavivirmejor.com/wp-content/uploads/2021/02/recetas_para_vivir_mejor_jugo_de_mora_con_leche_batidos_2021-1.jpg";
+        "https://t2.uc.ltmcdn.com/es/posts/3/3/6/como_hacer_un_batido_de_mora_26633_600_square.jpg";
       break;
     default:
       imagenJugo.src =
@@ -37,12 +37,12 @@ tipoGas.addEventListener("change", function () {
 
     case "manzana":
       imagenGas.src =
-        "https://copservir.vtexassets.com/arquivos/ids/762990/GASEOSA-MANZANA-POSTOBON_F.png?v=637950263917200000";
+        "https://licoresmedellin.com/cdn/shop/products/gaseosa-manzana-postobon-grande-25lgaseosa-manzana-postobon-grande-25lpostobonlicores-medellin-362264.png?v=1681661908&width=1024";
       break;
 
     case "sprite":
       imagenGas.src =
-        "https://copservir.vtexassets.com/arquivos/ids/765048/GASEOSA-SPRITE-NR_F.png?v=637950273776270000";
+        "https://lavaquita.co/cdn/shop/products/supermercados_la_vaquita_supervaquita_gaseosa_sprite_400ml_bebidas_liquidas_1024x1024.jpg?v=1620489364";
       break;
 
     default:
