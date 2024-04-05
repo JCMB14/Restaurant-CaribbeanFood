@@ -37,7 +37,7 @@ tipoGas.addEventListener("change", function () {
 
     case "manzana":
       imagenGas.src =
-        "https://licoresmedellin.com/cdn/shop/products/gaseosa-manzana-postobon-grande-25lgaseosa-manzana-postobon-grande-25lpostobonlicores-medellin-362264.png?v=1681661908&width=1024";
+        "https://static.merqueo.com/images/products/large/16b683b2-4327-4993-9165-9a3704123c2d.jpg";
       break;
 
     case "sprite":
